@@ -53,7 +53,7 @@ You should take this course if you answer yes to at least 2 of the following que
 
 ## Prework
 
-During this tutorial you will need:
+During this tutorial you will need ... (Work in Progress)
 
 [rstudio-desktop]: https://rstudio.com/products/rstudio/
 [chrome]: https://www.google.com/chrome/
