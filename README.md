@@ -73,7 +73,7 @@ Below is the preliminary program, subject to changes by erum::Conf organisers. T
 | (1h)          | :bento:                | *Lunch break*                      |
 | (1h)          | :zap:                  | 3: Develop a custom shiny template |
 | (15 min)      | :coffee:               | *Coffee break*                     |
-| (2h)          | :globe_with_meridians: | 4: tidymodules and UI              |
+| (2h)          | :globe_with_meridians: | 4: tidymodules                     |
 
 
 ### Detailed schedule
