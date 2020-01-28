@@ -85,9 +85,10 @@ Below is the preliminary program, subject to changes by erum::Conf organisers. T
     * Introduction to HTML dependencies
     
   - Introduction to JavaScript for Shiny (preliminary)
-    * Types, variables
+    * Types
     * Functions
     * jQuery
+    * Events
     * ...
     
   - Develop a custom shiny template (examples taken from [RinteRface](https://rinterface.com) templates)
