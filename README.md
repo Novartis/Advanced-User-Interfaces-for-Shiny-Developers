@@ -45,7 +45,7 @@ In the past two years, there were various Shiny focused workshops introducing ba
 
 You should take this course if you answer yes to at least 2 of the following questions:
 
-  - How to develop outstanding shiny apps?
+  - Do you want to know how to develop outstanding shiny apps?
   - Have you ever wondered how to develop new input widgets?
   - Are you bothered by the cumbersomeness of module communication in vanilla Shiny?
   - How would you manage an app with 150 tightly connected modules?
