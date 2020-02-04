@@ -1,5 +1,5 @@
 # Advanced-User-Interfaces-for-Shiny-Developers
-erum::Conf 2020 workshop session
+> Disclaimer: this repository is under review by the erum::Conf 2020 program committee (and will be removed if not accepted)
 
 by the Scientific Computing and Consulting Group, Novartis
 
