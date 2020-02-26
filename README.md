@@ -132,7 +132,7 @@ Mustapha Larbaoui and David Granjon are respectively, associate director and pri
 
 -----
 
-Copyright [2020] [Novartis]
+Copyright 2020 Novartis AG
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
