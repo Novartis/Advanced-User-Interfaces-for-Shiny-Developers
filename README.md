@@ -1,35 +1,32 @@
 # Advanced-User-Interfaces-for-Shiny-Developers
-> Disclaimer: this repository is under review by the erum::Conf 2020 program committee (and will be removed if not accepted)
 
 by the Scientific Computing and Consulting Group, Novartis
 
 -----
 
-:spiral_calendar: May 30, 2020  
-:alarm_clock:     09:00 - 17:00 (?)
-:hotel:           @ Politecnico
+:spiral_calendar: June 20, 2020  
+:alarm_clock:     14:00 - 17:00 
+:hotel:           @ Remote
 
 -----
 
 
 ### Workshop Links
 
-- :house: [Workshop Website - Coming soon]()
 - :card_file_box: [Github](https://github.com/DivadNojnarg/Advanced-User-Interfaces-for-Shiny-Developers)
-- :postbox: [RStudio Community thread - Coming soon](https://community.rstudio.com/)
 
 -----
 
 
 ## Overview
 
-In the past two years, there were various Shiny focused workshops introducing basic as well as advanced topics such as modules and Javascript/R interactions. However, handling advanced user interfaces was never an emphasis.   Clients often desire custom designs, yet this generally exceeds core features of Shiny. We recognized that R App developers lacking a significant background in web development may have found this requirement to be overwhelming. Consequently, the aim of this workshop is to provide participants the necessary knowledge to extend Shiny's layout, input widgets and include the new components in a novel modular framework. The workshop is organized into four parts. We first dive into the {htmltools} package, providing functions to create and manipulate shiny tags as well as manage dependencies. We then go through the basics of JavaScript, especially jQuery. Part 3 homes in on the development of a new template on top of Shiny by demonstrating examples from the [{bs4Dash}](https://github.com/RinteRface/bs4Dash) and [{shinyMobile}](https://github.com/RinteRface/shinyMobile) packages, part of the [RinteRface](https://rinterface.com) project. Finally, we integrate these new components into shiny modules, designed with an object-oriented-based package, namely [{tidymodules}](http://opensource.nibr.com/tidymodules/index.html). This novel approach allows the development of Shiny apps using R6 classes, thereby significantly reducing the burden of modular communication faced by classic shiny modules and their namespace management.
+In the past two years, there were various Shiny focused workshops introducing basic as well as advanced topics such as modules and Javascript/R interactions. However, handling advanced user interfaces was never an emphasis. Clients often desire custom designs, yet this generally exceeds core features of Shiny. We recognized that R App developers lacking a significant background in web development may have found this requirement to be overwhelming. Consequently, the aim of this workshop is to provide participants the necessary knowledge to extend Shiny's layout, input widgets and include the new components in a novel modular framework. The workshop is organized into three parts. We first dive into the {htmltools} package, providing functions to create and manipulate shiny tags as well as manage web dependencies. Part 2 homes in on the development of a new template on top of Shiny by demonstrating examples from the [RinteRface](https://rinterface.com) project. Finally, we show how one may integrate these new components into shiny modules, designed with an object-oriented-based package, namely [{tidymodules}](http://opensource.nibr.com/tidymodules/index.html). This novel approach allows the development of Shiny apps using R6 classes, thereby significantly reducing the burden of modular communication faced by classic shiny modules and their namespace management.
 
 
 ## Learning objectives
 
 - Manipulate Shiny tags with {htmltools}
-- Understand how dependencies are handled
+- Understand how web dependencies are handled
 - Discover the steps to create a new template from scratch
 - Learn how shiny deals with inputs
 - Discover a new framework for robust module development
@@ -53,13 +50,9 @@ You should take this course if you answer yes to at least 2 of the following que
 
 ## Workshop Preparation
 
-During this tutorial you will need ... (Work in Progress)
-
-[rstudio-desktop]: https://rstudio.com/products/rstudio/
+[rstudio-cloud]: https://rstudio.cloud/project/1395473
 [chrome]: https://www.google.com/chrome/
-
-We will also set up a [RStudio Cloud](https://rstudio.cloud) dedicated project.
-
+[book]: https://divadnojnarg.github.io/outstanding-shiny-ui/
 
 ## Schedule
 
@@ -68,42 +61,59 @@ Below is the preliminary program, subject to changes by erum::Conf organisers. T
 | Time          |                        | Activity                           |
 | :------------ | ---------------------- | :----------------------            |
 | (1h)          | :clapper:              | 1: Introduction to htmltools       |
-| (15 min)      | :coffee:               | *Coffee break*                     |
-| (1h)          | :nail_care:            | 4: Introduction to JavaScript      |
-| (1h)          | :bento:                | *Lunch break*                      |
-| (1h)          | :zap:                  | 3: Develop a custom shiny template |
-| (15 min)      | :coffee:               | *Coffee break*                     |
-| (2h)          | :globe_with_meridians: | 4: tidymodules                     |
+| (10 min)      | :coffee:               | *Coffee break*                     |
+| (1h)          | :zap:                  | 2: Develop a custom shiny template |
+| (10 min)      | :coffee:               | *Coffee break*                     |
+| (1h)          | :globe_with_meridians: | 3: tidymodules                     |
 
 
 ### Detailed schedule
 
-  - Introduction to {htmltools}
-    * HTML 
-    * Shiny's tags: structure (name, class, attributes, children, ...)
-    * Manipulate tags: access/modifie/add the class, attributes, children
-    * Introduction to HTML dependencies
-    
-  - Introduction to JavaScript for Shiny (preliminary)
-    * Types
-    * Functions
-    * jQuery
-    * Events
-    * ...
-    
-  - Develop a custom shiny template (examples taken from [RinteRface](https://rinterface.com) templates)
-    * Reminder on {shiny}'s dependencies (Bootstrap 3, 4, jQuery, ...)
-    * Create new CSS/JS dependencies with {hmtltools}
-    * Develop the template layout (navbar, sidebar, body, footer, ...)
-    * Develop custom input widgets (how to input binding work?)
-      * Basic description of the Shiny input binding utils
-      * Describe how {shiny} deal with inputs
-    * Test the newly created components
-      * Unit tests with testthat
-      * Testing JavaScript code
-      * Other tests
+  - Workshop introduction
+    * Presentation
+    * Quiz: Shiny or not Shiny?
+    * Workshop motivations and agenda
+  
+  - Part 1. Shiny: under the hood
+    * Chapter 1: What's behind a Shiny app?
+      * Shiny generates HTML from R (Exercise)
+      * Shiny dependencies
+      * Quick introduction to HTML
+        * HTML tags
+        * HTML attributes
+        * The document object model (DOM)
+        
+    * Chapter 2: Manage web dependencies with {htmltools}
+      * Include CSS and JS, the dirty approach
+      * Creating web dependencies
+      * Attach web dependencies
+      * Exercises
       
-  - Introduction to {tidymodules}
+    * Chapter 3: From HTML to R
+      * Tag structure
+      * Exercise 1
+      * Add/replace children
+      * Tips
+      * Exercise 2
+  
+  - Part 2. Practice: implementation of the Tabler Boostrap 4 dashboard template
+    * How do we proceed?
+    * Chapter 1: Import web dependencies (exercise step 1)
+    * Chapter 2: Create template elements (exercise step 2)
+    * Chapter 3: Create new inputs
+      * JavaScript
+        * Define variables
+        * Objects
+      * jQuery: "Write less, do more"
+        * Selectors
+        * Event listeners
+        * Exercise
+      * Binding Shiny inputs
+        * Finding inputs
+        * Exercise 
+        * Conclusion
+      
+  - Part 3: Introduction to {tidymodules}
     * Introduction to R6: object oriented programming key concepts
     * Reminders on classic shiny modules: what are the main drawbacks?
     * {tidymodules}
