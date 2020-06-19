@@ -5,7 +5,7 @@ by the Scientific Computing and Consulting Group, Novartis
 -----
 
 :spiral_calendar: June 20, 2020  
-:alarm_clock:     14:00 - 17:00 
+:alarm_clock:     13:30 - 17:00 
 :hotel:           @ Remote
 
 -----
@@ -54,11 +54,11 @@ Below is the preliminary program, subject to changes by erum::Conf organisers. T
 
 | Time          |                        | Activity                           |
 | :------------ | ---------------------- | :----------------------            |
-| (1h)          | :clapper:              | 1: Introduction to htmltools       |
-| (10 min)      | :coffee:               | *Coffee break*                     |
+| (50min)       | :zap:                  | 1: Shiny: under the hood           |
+| (5 min)       | :coffee:               | *Coffee break*                     |
 | (1h)          | :zap:                  | 2: Develop a custom shiny template |
 | (10 min)      | :coffee:               | *Coffee break*                     |
-| (1h)          | :globe_with_meridians: | 3: tidymodules                     |
+| (1h)          | :zap:                  | 3: tidymodules                     |
 
 
 ### Detailed schedule
