@@ -11,13 +11,6 @@ by the Scientific Computing and Consulting Group, Novartis
 -----
 
 
-### Workshop Links
-
-- :card_file_box: [Github](https://github.com/DivadNojnarg/Advanced-User-Interfaces-for-Shiny-Developers)
-
------
-
-
 ## Overview
 
 In the past two years, there were various Shiny focused workshops introducing basic as well as advanced topics such as modules and Javascript/R interactions. However, handling advanced user interfaces was never an emphasis. Clients often desire custom designs, yet this generally exceeds core features of Shiny. We recognized that R App developers lacking a significant background in web development may have found this requirement to be overwhelming. Consequently, the aim of this workshop is to provide participants the necessary knowledge to extend Shiny's layout, input widgets and include the new components in a novel modular framework. The workshop is organized into three parts. We first dive into the {htmltools} package, providing functions to create and manipulate shiny tags as well as manage web dependencies. Part 2 homes in on the development of a new template on top of Shiny by demonstrating examples from the [RinteRface](https://rinterface.com) project. Finally, we show how one may integrate these new components into shiny modules, designed with an object-oriented-based package, namely [{tidymodules}](http://opensource.nibr.com/tidymodules/index.html). This novel approach allows the development of Shiny apps using R6 classes, thereby significantly reducing the burden of modular communication faced by classic shiny modules and their namespace management.
@@ -50,9 +43,10 @@ You should take this course if you answer yes to at least 2 of the following que
 
 ## Workshop Preparation
 
-[rstudio-cloud]: https://rstudio.cloud/project/1395473
-[chrome]: https://www.google.com/chrome/
-[book]: https://divadnojnarg.github.io/outstanding-shiny-ui/
+- Project: [rstudio-cloud](https://rstudio.cloud/project/1395473)
+- Recommanded web browser: [chrome](https://www.google.com/chrome/)
+- Resources: [Outstanding User Interfaces for Shiny ](https://divadnojnarg.github.io/outstanding-shiny-ui/)
+- tidymodules documentation: [pkgdown website](https://opensource.nibr.com/tidymodules/)
 
 ## Schedule
 
